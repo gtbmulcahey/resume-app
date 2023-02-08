@@ -15,6 +15,7 @@ button {
 
 h3, h4 {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 nav {
@@ -54,17 +55,6 @@ nav a:hover {
   max-width: 700px;
   margin: auto;
   padding-top: 72px;
-}
-
-.article-list-item {
-  text-decoration: none;
-  color: black;
-  padding: 16px 0 0 0;
-}
-
-.article-list-item p {
-  padding-bottom: 32px;
-  border-bottom: 2px solid black;
 }
 
 #add-comment-form {

@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ExperiencesListPage from './pages/ExperiencesListPage';
-import HomePage from './pages/HomePage';
+import SummaryPage from './pages/SummaryPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <NavBar />
         <div id="page-body">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<SummaryPage />} />
             <Route path="/about" element = {<AboutPage />} />
             <Route path="/experiences" element={<ExperiencesListPage />} />
             <Route path="/experiences/:experienceId" element={<ExperiencePage />} />

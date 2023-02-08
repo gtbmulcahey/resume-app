@@ -1,0 +1,20 @@
+p.experienceDates {
+    padding-bottom: 0px;
+    border-bottom: none;
+    margin: 0px;
+}
+
+h3.experienceName {
+    margin:0px;
+    padding: 0px;
+}
+
+div.experience {
+    margin-bottom: 30px;
+}
+
+p.primaryTechnologies {
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -1,16 +1,19 @@
-import {Link} from 'react-router-dom';
+import '../css/ExperiencesList.css'
+import { CurrentJob } from './CurrentJob';
+import { PreviousJobsList } from './PreviousJobsList';
+import { useEffect } from 'react';
 
-const ExperiencesList = ({experiences}) => {
+const ExperiencesList = ({ experiences }) => {
+
+    useEffect(() => {
+        console.log(`experiences are ${experiences}`);
+        console.log(`experiences are ${experiences.length}`);
+      }, [experiences]);
+
     return (
         <>
-            {
-                experiences.map(experience => (
-                    <Link key={experience.name} className="article-list-item" to={`/experiences/${experience.name}`}>
-                        <h3>{experience.title}</h3>
-                        <p>{experience.content[0].substring(0, 150)}...</p>
-                    </Link>
-                ))
-            }
+            {/* <CurrentJob job={experiences[0]}/> */}
+            <PreviousJobsList jobs={experiences} />
         </>
     );
 }
