@@ -27,7 +27,7 @@ export const PreviousJobSummary = ({ job }) => {
             <ExperienceDates startDate={job.startDate} endDate={job.endDate} />
 
             <div className="experienceNameAndExpander">
-                <h5 className="experienceName">{job.name}</h5>
+                <h4 className="experienceName">{job.name}</h4>
 
                 <span className="expandButton">
                     <ExpandMoreOrLessButton onClick={() => { setShowJob(!showJob) }}>
