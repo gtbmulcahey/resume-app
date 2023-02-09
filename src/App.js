@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
-import ExperiencesListPage from './pages/ExperiencesListPage';
+import JobsListPage from './pages/JobsListPage';
 import SummaryPage from './pages/SummaryPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<SummaryPage />} />
             <Route path="/about" element = {<AboutPage />} />
-            <Route path="/experiences" element={<ExperiencesListPage />} />
+            <Route path="/experiences" element={<JobsListPage />} />
             <Route path="/experiences/:experienceId" element={<ExperiencePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

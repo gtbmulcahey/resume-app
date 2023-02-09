@@ -1,4 +1,4 @@
-const experiences = [
+const jobs = [
     {
         name: 'RBA Inc., Software Engineer',
         startDate: 'August 2020',
@@ -51,4 +51,4 @@ const experiences = [
     }
 ];
 
-export default experiences;
+export default jobs;

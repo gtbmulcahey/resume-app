@@ -1,26 +1,20 @@
-import '../css/PreviousJobSummary.css'
-import { PrimaryTechnologies } from './PrimaryTechnologies';
+import '../css/Job.css'
 import { ExperienceDates } from './ExperienceDates';
 import { useState, useEffect } from 'react';
-import { ClientsSummaryList } from './ClientsSummaryList';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { ExpandMoreOrLessButton } from './composition';
+import { JobSnippet } from './JobSnippet';
+import { JobDetail } from './JobDetail';
 
 
-export const PreviousJobSummary = ({ job }) => {
+export const Job = ({ job }) => {
 
-    const [showJob, setShowJob] = useState(false);
-
-    const hasClients = job.clients && job.clients[0] ? true : false
+    const [showJobDetail, setShowJobDetail] = useState(false);
 
     useEffect(() => {
-        console.log(`hasClients is ${hasClients}`);
-        if (hasClients) {
-            console.log(`first client name ${job.clients[0].name}`)
-        }
-    }, [hasClients, job]);
-
+        console.log(`showJobDetail is ${showJobDetail}`);
+    }, [showJobDetail]);
 
     return (
         <div key={job.name} className="experience">
@@ -30,8 +24,8 @@ export const PreviousJobSummary = ({ job }) => {
                 <h4 className="experienceName">{job.name}</h4>
 
                 <span className="expandButton">
-                    <ExpandMoreOrLessButton onClick={() => { setShowJob(!showJob) }}>
-                        {!showJob ?
+                    <ExpandMoreOrLessButton onClick={() => { setShowJobDetail(!showJobDetail) }}>
+                        {!showJobDetail ?
                             <ExpandMoreIcon />
                             :
                             <ExpandLessIcon />
@@ -40,11 +34,11 @@ export const PreviousJobSummary = ({ job }) => {
                 </span>
             </div>
 
-            {hasClients ?
-                <ClientsSummaryList clients={job.clients} />
-                :
-                <PrimaryTechnologies primaryTechnologies={job.primaryTechnologies} length="60" />
-            }
+            { showJobDetail ? 
+            <JobDetail />
+            :
+            <JobSnippet job={job}/>
+}
         </div>
     );
 }

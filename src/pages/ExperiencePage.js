@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import experiences from "./experiences-content";
+import jobs from "./jobs-content";
 import NotFoundPage from "./NotFoundPage";
 
 const ExperiencePage = () => {
     const { experienceId } = useParams();
-    const experience = experiences.find(experience => experience.name === experienceId);
+    const experience = jobs.find(experience => experience.name === experienceId);
 
     if (!experience) {
 

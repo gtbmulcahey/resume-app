@@ -1,8 +1,8 @@
-import { PreviousJobSummary } from "./PreviousJobSummary";
+import { Job } from "./Job";
 import { useEffect } from "react";
 
 
-export const PreviousJobsList = ({ jobs }) => {
+export const JobsList = ({ jobs }) => {
 
     useEffect(() => {
         console.log(`first job is ${jobs[0].name}`);
@@ -14,8 +14,7 @@ export const PreviousJobsList = ({ jobs }) => {
             {
                 jobs.map((job, i) => (
                     <div key={i}>
-                        <PreviousJobSummary job={job} />
-                        
+                        <Job job={job} /> 
                     </div>
                 ))
             }
