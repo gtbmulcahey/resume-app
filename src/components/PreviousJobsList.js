@@ -2,7 +2,6 @@ import { PreviousJobSummary } from "./PreviousJobSummary";
 import { useEffect } from "react";
 
 
-
 export const PreviousJobsList = ({ jobs }) => {
 
     useEffect(() => {
@@ -16,6 +15,7 @@ export const PreviousJobsList = ({ jobs }) => {
                 jobs.map((job, i) => (
                     <div key={i}>
                         <PreviousJobSummary job={job} />
+                        
                     </div>
                 ))
             }

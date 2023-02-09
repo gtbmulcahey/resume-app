@@ -1,13 +1,19 @@
-import '../css/ExperiencesList.css'
+import '../css/PreviousJobSummary.css'
 import { PrimaryTechnologies } from './PrimaryTechnologies';
 import { ExperienceDates } from './ExperienceDates';
-import {  useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ClientsSummaryList } from './ClientsSummaryList';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { ExpandMoreOrLessButton } from './composition';
+
 
 export const PreviousJobSummary = ({ job }) => {
 
-    const hasClients =job.clients && job.clients[0] ? true : false
-    
+    const [showJob, setShowJob] = useState(false);
+
+    const hasClients = job.clients && job.clients[0] ? true : false
+
     useEffect(() => {
         console.log(`hasClients is ${hasClients}`);
         if (hasClients) {
@@ -19,7 +25,20 @@ export const PreviousJobSummary = ({ job }) => {
     return (
         <div key={job.name} className="experience">
             <ExperienceDates startDate={job.startDate} endDate={job.endDate} />
-            <h4 className="experienceName">{job.name}</h4>
+
+            <div className="experienceNameAndExpander">
+                <h5 className="experienceName">{job.name}</h5>
+
+                <span className="expandButton">
+                    <ExpandMoreOrLessButton onClick={() => { setShowJob(!showJob) }}>
+                        {!showJob ?
+                            <ExpandMoreIcon />
+                            :
+                            <ExpandLessIcon />
+                        }
+                    </ExpandMoreOrLessButton>
+                </span>
+            </div>
 
             {hasClients ?
                 <ClientsSummaryList clients={job.clients} />

@@ -4,13 +4,8 @@ p.experienceDates {
     margin: 0px;
 }
 
-h3.experienceName {
-    margin:0px;
-    padding: 0px;
-}
-
 div.experience {
-    margin-bottom: 30px;
+    margin-bottom: 8%;
 }
 
 p.primaryTechnologies {
