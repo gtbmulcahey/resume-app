@@ -1,4 +1,4 @@
-export const WorkAccomplishments = ({ accomplishments }) => {
+export const Accomplishments = ({ accomplishments }) => {
     return (
         <>
             {
