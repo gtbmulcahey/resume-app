@@ -35,7 +35,7 @@ export const Job = ({ job }) => {
             </div>
 
             { showJobDetail ? 
-            <JobDetail />
+            <JobDetail job={job}/>
             :
             <JobSnippet job={job}/>
 }

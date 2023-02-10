@@ -1,17 +1,15 @@
 import { ClientsSummaryList } from "./ClientsSummaryList";
-import { PrimaryTechnologies } from "./PrimaryTechnologies";
-
+import { PrimaryTechnologiesSnippet } from "./PrimaryTechnologiesSnippet";
+import useClients from "./useClients";
 
 export const JobSnippet = ({ job }) => {
 
-    const hasClients = job.clients && job.clients[0] ? true : false
-
     return (
         <>
-            {hasClients ?
+            {useClients(job) ?
                 <ClientsSummaryList clients={job.clients} />
                 :
-                <PrimaryTechnologies primaryTechnologies={job.primaryTechnologies} length="60" />
+                <PrimaryTechnologiesSnippet primaryTechnologies={job.primaryTechnologies} length="60" />
             }
         </>
     );

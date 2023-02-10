@@ -1,7 +1,7 @@
-import { PrimaryTechnologiesSnippet } from "./PrimaryTechnologiesSnippet";
+import { PrimaryTechnologiesDetail } from './PrimaryTechnologiesDetail';
 import '../css/ClientsSummaryList.css';
 
-export const ClientsSummaryList = ({ clients }) => {
+export const ClientsDetail = ({ clients }) => {
 
     return (
         <>
@@ -9,7 +9,7 @@ export const ClientsSummaryList = ({ clients }) => {
                 clients.map((client, i) => (
                     <div className="clientSummaryBlock" key={i}>
                         <div className="clientName">{client.name}</div>
-                        <PrimaryTechnologiesSnippet primaryTechnologies={client.primaryTechnologies} length={60}/>
+                        <PrimaryTechnologiesDetail primaryTechnologies={client.primaryTechnologies}/>
                     </div>
                 ))
             }
