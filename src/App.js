@@ -6,7 +6,7 @@ import JobsListPage from './pages/JobsListPage';
 import SummaryPage from './pages/SummaryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import EducationPage from './pages/EducationPage';
-import { TrainingPage } from './pages/TrainingPage';
+import { TrainingPage } from './pages/AdditionalTrainingPage';
 
 function App() {
   return (

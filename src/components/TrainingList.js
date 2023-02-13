@@ -1,18 +1,21 @@
-import { Job } from "./Job";
-import { useEffect } from "react";
+import additionalTrainingList from "../pages/additional-training-content";
+import { AdditionalTrainingCourses } from "./AdditionalTrainingCourses";
 
 
-export const TrainingList = ({ trainingList }) => {
+export const TrainingList = () => {
 
+    console.log(`additionalTrainingList is ${additionalTrainingList}`);
+    console.log(`additionalTrainingList firm ${additionalTrainingList[0].firm}`);
     return (
         <>
             {
-                trainingList.map((training, i) => (
+                additionalTrainingList.map((provider, i) => (
                     <div key={i}>
-                        <Job job={training} /> 
+                        <div>{provider.firm}</div>
+                        <AdditionalTrainingCourses courses={provider.courses} />
                     </div>
                 ))
             }
         </>
-    );
+    )
 }
