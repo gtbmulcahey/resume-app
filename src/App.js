@@ -7,6 +7,7 @@ import SummaryPage from './pages/SummaryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import EducationPage from './pages/EducationPage';
 import { TrainingPage } from './pages/AdditionalTrainingPage';
+import ExpertisePage from './pages/ExpertisePage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/experiences" element={<JobsListPage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/training" element={<TrainingPage />} />
+            <Route path="/expertise" element={<ExpertisePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
