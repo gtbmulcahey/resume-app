@@ -12,7 +12,7 @@ const ExperiencePage = () => {
     }
     return (
         <>
-            <h1>{experience.title}</h1>
+            <h2>{experience.title}</h2>
             {experience.content.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
             ))}

@@ -5,7 +5,7 @@ const JobsListPage = () => {
 
     return (
         <>
-            <h1>Professional Experience</h1>
+            <h2>Professional Experience</h2>
             <JobsList jobs={jobs} />
         </>
     )

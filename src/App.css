@@ -13,12 +13,20 @@ button {
   cursor: pointer;
 }
 
+.headerName {
+  text-align: center;
+  margin:0px;
+}
 
-
-#page-body {
+#page-wrap {
   max-width: 700px;
   margin: auto;
-  padding-top: 72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#page-wrap h1 {
+  text-align: center;
 }
 
 #add-comment-form {

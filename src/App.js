@@ -12,12 +12,15 @@ import ExpertisePage from './pages/ExpertisePage';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" id="outer-container">
         <NavBar />
-        <div id="page-body">
+        <div>
+          <h2 className="headerName">Gail Mulcahey</h2>
+        </div>
+        <div id="page-wrap">
           <Routes>
             <Route path="/" element={<SummaryPage />} />
-            <Route path="/about" element = {<AboutPage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/experiences" element={<JobsListPage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/training" element={<TrainingPage />} />

@@ -1,11 +1,12 @@
 import { ExpertiseList } from "../components/ExpertiseList";
+import '../css/ExpertiseList.css';
 
 
 const ExpertisePage = () => {
 
     return (
         <>
-            <h1>Technology Expertise</h1>
+            <h2>Technology Expertise</h2>
             <div><ExpertiseList /></div>
         </>
     )

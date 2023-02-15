@@ -8,7 +8,7 @@ const EducationPage = () => {
     }
     return (
         <>
-           <h1>Education</h1>
+           <h2>Education</h2>
            <EducationList educationList={educationList} />
         </>
     );

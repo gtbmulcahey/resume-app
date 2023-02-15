@@ -4,7 +4,7 @@ const SummaryPage = () => {
 
     return (
         <>
-            <h1>Summary</h1>
+            <h2>Summary</h2>
             <div>{summary.experienceAndIndustries}</div>
         </>
     )
