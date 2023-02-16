@@ -13,48 +13,20 @@ button {
   cursor: pointer;
 }
 
-h3, h4 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-nav {
-  border-bottom: 4px solid black;
+.headerName {
   text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
+  margin:0px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 24px 32px;
-}
-
-nav a:hover {
-  background: black;
-  color: white;
-}
-
-#page-body {
+#page-wrap {
   max-width: 700px;
   margin: auto;
-  padding-top: 72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#page-wrap h1 {
+  text-align: center;
 }
 
 #add-comment-form {
@@ -85,11 +57,6 @@ input, textarea {
 
 #add-comment-form button {
   width: 320px;
-}
-
-#upvotes-section button, p {
-  display: inline-block;
-  margin-right: 16px;
 }
 
 .comment {

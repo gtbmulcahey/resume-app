@@ -1,0 +1,19 @@
+div.experienceNameAndExpander {
+    display: block;
+    margin: 0px;
+}
+
+h5.experienceName {
+    display:initial;
+}
+
+span.expandButton {
+    padding:0px;
+    float: right;
+    font-size: xx-large;
+}
+
+button {
+    padding:0px;
+    contain:size;
+}
