@@ -1,5 +1,5 @@
 import './css/Nav.css';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
