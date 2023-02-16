@@ -17,7 +17,6 @@ const NavBar = () => {
                 <RadiumLink className="bm-item-list" to="/experiences">Professional Experience</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/education">Education</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/training">Additional Training</RadiumLink>
-                <RadiumLink className="bm-item-list" to="/about">About</RadiumLink>
             </Menu>
         </>
     );
