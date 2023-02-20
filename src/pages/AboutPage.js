@@ -1,7 +1,9 @@
+import { PageTitle } from "../components/PageTitle";
+
 const AboutPage = () => {
     return (
         <>
-        <h2>About Gail</h2>
+        <PageTitle title='About'></PageTitle>
         <p>
         </p>
     </>

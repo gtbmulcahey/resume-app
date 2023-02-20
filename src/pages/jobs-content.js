@@ -15,12 +15,6 @@ const jobs = [
                     'Performed code reviews for other developers',
                     'Created regression tests, unit tests'
                 ]
-            },
-            {
-                name: 'RSM',
-                primaryTechnologies: 'C#, .NET 5.0',
-                accomplishments: [
-                ]
             }
         ]       
     },    

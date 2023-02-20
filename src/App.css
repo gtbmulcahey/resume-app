@@ -15,11 +15,10 @@ button {
 
 .headerName {
   text-align: center;
-  margin:0px;
 }
 
 #page-wrap {
-  max-width: 700px;
+  max-width: 80%;
   margin-left:5%;
   margin-right:5%;
   padding-top: 10px;

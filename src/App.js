@@ -15,7 +15,7 @@ function App() {
       <div className="App" id="outer-container">
         <NavBar />
         <div>
-          <h2 className="headerName">Gail Mulcahey</h2>
+          <h3 className="headerName">Gail Mulcahey</h3>
         </div>
         <div id="page-wrap">
           <Routes>
