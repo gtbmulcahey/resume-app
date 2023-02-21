@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import AboutPage from './pages/AboutPage';
 import JobsListPage from './pages/JobsListPage';
-import SummaryPage from './pages/SummaryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import EducationPage from './pages/EducationPage';
 import { TrainingPage } from './pages/AdditionalTrainingPage';
