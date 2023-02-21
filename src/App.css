@@ -21,10 +21,18 @@ button {
   margin:0px;
 }
 
-.header p, .header a {
+.footer p {
   font-style: italic;
-  font-size: medium;
+  font-size: initial;
+  text-align: center;
+  text-align: right;
+  margin-right: 5%;
 }
+
+.footer span{
+  padding-left:10px;
+}
+
 
 #page-wrap {
   max-width: 80vw;
