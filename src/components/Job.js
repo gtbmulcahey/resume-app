@@ -17,14 +17,14 @@ export const Job = ({ job }) => {
     }, [showJobDetail]);
 
     return (
-        <div key={job.name} className="experience">
+        <div key={job.name} className="experience"  onClick={() => { setShowJobDetail(!showJobDetail) }}>
             <ExperienceDates startDate={job.startDate} endDate={job.endDate} />
 
             <div className="experienceNameAndExpander">
-                <span className="experienceName">{job.name}</span>
+                <h4 className="experienceName">{job.name}</h4>
 
                 <span className="expandButton">
-                    <ExpandMoreOrLessButton onClick={() => { setShowJobDetail(!showJobDetail) }}>
+                    <ExpandMoreOrLessButton>
                         {!showJobDetail ?
                             <ExpandMoreIcon />
                             :
