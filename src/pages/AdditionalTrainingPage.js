@@ -1,9 +1,10 @@
 import { TrainingList } from "../components/TrainingList";
+import { PageTitle } from "../components/PageTitle";
 
 export const TrainingPage = () => {
     return (
         <>
-            <h2>Additional Training</h2>
+            <PageTitle title='Additional Training'></PageTitle>
             <TrainingList />
         </>
     );

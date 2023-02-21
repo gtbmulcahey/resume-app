@@ -1,19 +1,41 @@
 div.experienceNameAndExpander {
     display: block;
     margin: 0px;
+    font-weight: bold;
 }
 
-h5.experienceName {
+.experienceName {
     display:initial;
 }
 
 span.expandButton {
     padding:0px;
     float: right;
-    font-size: xx-large;
 }
 
 button {
     padding:0px;
     contain:size;
 }
+
+p.experienceDates {
+    padding-bottom: 0px;
+    border-bottom: none;
+    margin: 0px;
+}
+
+div.experience {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-bottom: 1px solid lightgray;
+}
+
+p.primaryTechnologies {
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+  h1 {
+    margin: 10%
+  }

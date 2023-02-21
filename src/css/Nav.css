@@ -50,10 +50,10 @@ nav {
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  width: 26px;
+  height: 20px;
+  left: 2vw;
+  top: 2vw;
 }
 
 /* Color/shape of burger icon bars */

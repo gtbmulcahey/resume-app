@@ -13,15 +13,23 @@ button {
   cursor: pointer;
 }
 
-.headerName {
+.header {
   text-align: center;
+}
+
+.header > * {
   margin:0px;
 }
 
+.header p, .header a {
+  font-style: italic;
+  font-size: medium;
+}
+
 #page-wrap {
-  max-width: 700px;
-  margin-left:5%;
-  margin-right:5%;
+  max-width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   padding-top: 10px;
   padding-bottom: 10px;
 }

@@ -1,4 +1,4 @@
-import '../css/ExperiencesList.css';
+import '../css/Job.css';
 
 export const PrimaryTechnologiesSnippet = ({primaryTechnologies, length}) => {
     

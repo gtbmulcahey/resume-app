@@ -1,6 +1,7 @@
 import educationList from "./education-content";
 import NotFoundPage from "./NotFoundPage";
 import { EducationList } from "../components/EducationList";
+import { PageTitle } from "../components/PageTitle";
 
 const EducationPage = () => {
     if (!educationList) {
@@ -8,7 +9,7 @@ const EducationPage = () => {
     }
     return (
         <>
-           <h2>Education</h2>
+           <PageTitle title='Education'></PageTitle>
            <EducationList educationList={educationList} />
         </>
     );

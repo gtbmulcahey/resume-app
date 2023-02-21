@@ -21,7 +21,7 @@ export const Job = ({ job }) => {
             <ExperienceDates startDate={job.startDate} endDate={job.endDate} />
 
             <div className="experienceNameAndExpander">
-                <h4 className="experienceName">{job.name}</h4>
+                <span className="experienceName">{job.name}</span>
 
                 <span className="expandButton">
                     <ExpandMoreOrLessButton onClick={() => { setShowJobDetail(!showJobDetail) }}>

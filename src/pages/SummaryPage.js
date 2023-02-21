@@ -1,10 +1,11 @@
+import { PageTitle } from "../components/PageTitle";
 import summary from "./summary-Content";
 
 const SummaryPage = () => {
 
     return (
         <>
-            <h2>Summary</h2>
+            <PageTitle title='Summary'></PageTitle>
             <div>{summary.experienceAndIndustries}</div>
         </>
     )

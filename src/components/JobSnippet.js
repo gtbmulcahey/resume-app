@@ -9,7 +9,7 @@ export const JobSnippet = ({ job }) => {
             {useClients(job) ?
                 <ClientsSummaryList clients={job.clients} />
                 :
-                <PrimaryTechnologiesSnippet primaryTechnologies={job.primaryTechnologies} length="60" />
+                <PrimaryTechnologiesSnippet primaryTechnologies={job.primaryTechnologies} length="110" />
             }
         </>
     );

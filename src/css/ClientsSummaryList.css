@@ -1,9 +1,9 @@
 div.clientName {
     margin-top: 1%;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 
 div.clientSummaryBlock {
-    margin-bottom: 2%;
     margin-top: 2%;
 }
