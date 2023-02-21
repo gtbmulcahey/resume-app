@@ -7,7 +7,7 @@ const educationList = [
     {
         degree: 'Bachelor of Mechanical Engineering',
         school: 'University of Minnesota',
-        location: 'Minneapolis, MN',   
+        location: 'Twin Cities',   
     },
 ];
 

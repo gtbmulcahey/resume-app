@@ -9,7 +9,7 @@ export const ClientsDetail = ({ clients }) => {
             {
                 clients.map((client, i) => (
                     <div className="clientSummaryBlock" key={i}>
-                        <div className="clientName">{client.name}</div>
+                        <h5 className="clientName">{client.name}</h5>
                         <PrimaryTechnologiesDetail primaryTechnologies={client.primaryTechnologies}/>
                         <Accomplishments accomplishments={client.accomplishments} />
                     </div>
