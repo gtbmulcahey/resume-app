@@ -9,7 +9,7 @@ export const ClientsSummaryList = ({ clients }) => {
                 clients.map((client, i) => (
                     <div className="clientSummaryBlock" key={i}>
                         <div className="clientName">{client.name}</div>
-                        <PrimaryTechnologiesSnippet primaryTechnologies={client.primaryTechnologies} length={60}/>
+                        <PrimaryTechnologiesSnippet primaryTechnologies={client.primaryTechnologies} length={120}/>
                     </div>
                 ))
             }

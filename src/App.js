@@ -14,14 +14,15 @@ function App() {
     <BrowserRouter>
       <div className="App" id="outer-container">
         <NavBar />
-        <div>
-          <h3 className="headerName">Gail Mulcahey</h3>
+        <div className="header">
+          <h3>Gail Mulcahey</h3>
+          <a href="https://www.linkedin.com/in/gail-mulcahey/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/gail-mulcahey/</a>
+          <p>gtbmulcahey@gmail.com</p>
         </div>
         <div id="page-wrap">
           <Routes>
-            <Route path="/" element={<SummaryPage />} />
+            <Route path="/" element={<JobsListPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/experiences" element={<JobsListPage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/training" element={<TrainingPage />} />
             <Route path="/expertise" element={<ExpertisePage />} />

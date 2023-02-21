@@ -25,7 +25,9 @@ p.experienceDates {
 }
 
 div.experience {
-    margin-bottom: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-bottom: 1px solid lightgray;
 }
 
 p.primaryTechnologies {

@@ -12,11 +12,11 @@ const NavBar = () => {
     return (
         <>
             <Menu className="bm-menu">
-                <RadiumIndexLink className="bm-item-list" to="/" >Summary</RadiumIndexLink>
+                <RadiumIndexLink className="bm-item-list" to="/" >Professional Experience</RadiumIndexLink>
                 <RadiumLink className="bm-item-list" to="/expertise">Technology Expertise</RadiumLink>
-                <RadiumLink className="bm-item-list" to="/experiences">Professional Experience</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/education">Education</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/training">Additional Training</RadiumLink>
+                <RadiumLink className="bm-item-list" to="/about">About</RadiumLink>
             </Menu>
         </>
     );
